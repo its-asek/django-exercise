@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Main Page</title>
+      <link rel="stylesheet" href="{% static '/css/base.css' %}">
+      <link rel="stylesheet" href="{% static '/css/text_processor/main_page.css' %}">
+   </head>
+   <body>
+      <header>
+         <a href="{% url 'home_page:home' %}" class="home-button">HOME</a>
+      </header>
+      <main class="main-container">
+         <h1>TEXT PROCESSOR</h1>
+         <form id="drag-drop-form" action="{% url 'text_processor:result' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label class="drag-drop-container" id="drag-drop-area">
+            <span id="drop-text">Drag a file or click to pick one</span>
+            <input type="file" name="text_file" accept=".txt" required>
+            <span id="file-name"></span>
+            </label>
+            <button type="submit">SUBMIT</button>
+         </form>
+         <script>
+            const dragDropArea = document.getElementById('drag-drop-area');
+            const fileInput = dragDropArea.querySelector('input[type="file"]');
+            const fileNameDisplay = document.getElementById('file-name');
+            const dropText = document.getElementById('drop-text');
+
+            dragDropArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dragDropArea.classList.add('dragover');
+            });
+
+            dragDropArea.addEventListener('dragleave', () => {
+                dragDropArea.classList.remove('dragover');
+            });
+
+            dragDropArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dragDropArea.classList.remove('dragover');
+
+                if (e.dataTransfer.files.length) {
+                    fileInput.files = e.dataTransfer.files;
+                    updateFileName();
+                }
+            });
+
+            fileInput.addEventListener('change', updateFileName);
+
+            function updateFileName() {
+                if (fileInput.files.length > 0) {
+                    const file = fileInput.files[0];
+                    dropText.textContent = "";
+                    fileNameDisplay.textContent = file.name;
+                } else {
+                    dropText.textContent = "Drag a file or click to pick one";
+                    fileNameDisplay.textContent = "";
+                }
+            }
+         </script>
+      </main>
+   </body>
+</html>

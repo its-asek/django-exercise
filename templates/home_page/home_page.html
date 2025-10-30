@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    <link rel="stylesheet" href="{% static '/css/home_page/home_page.css' %}">
+</head>
+<body>
+    <a href="{% url 'home_page:home' %}" class="home-button">HOME</a>
+
+    <main class="main-container">
+        <a href="{% url 'text_processor:home' %}" class="half-button left" data-line1="Text" data-line2="Processor">
+            <span>1</span>
+        </a>
+        <a href="{% url 'pesel_decoder:home' %}" class="half-button right" data-line1="PESEL" data-line2="Checker">
+            <span>2</span>
+        </a>
+    </main>
+
+</body>
+</html>

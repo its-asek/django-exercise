@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Main Page</title>
+      <link rel="stylesheet" href="{% static '/css/base.css' %}">
+      <link rel="stylesheet" href="{% static '/css/pesel_decoder/main_page.css' %}">
+   </head>
+   <body>
+      <header>
+         <a href="{% url 'home_page:home' %}" class="home-button">HOME</a>
+      </header>
+      <main class="main-container">
+         <h1>PESEL DECODER</h1>
+         <form method="post" class="pesel-input">
+            {% csrf_token %}
+            <input type="text" class="pesel-text-form" name="user_pesel" placeholder="Type in PESEL..." required>
+            <button type="submit" class="submit-button">OK</button>
+         </form>
+
+         {% if result %}
+            <pre class="result-box">{{ result }}</pre>
+         {% else %}
+            <pre class="result-placeholder"></pre>
+         {% endif %}
+      </main>
+   </body>
+</html>

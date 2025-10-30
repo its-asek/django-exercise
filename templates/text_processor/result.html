@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Main Page</title>
+      <link rel="stylesheet" href="{% static '/css/base.css' %}">
+      <link rel="stylesheet" href="{% static '/css/text_processor/result.css' %}">
+   </head>
+    <body>
+        <header>
+         <a href="{% url 'home_page:home' %}" class="home-button">HOME</a>
+        </header>
+        <main class="main-container">
+            <h1>TEXT PROCESSOR RESULT</h1>
+            <pre>{{ text }}</pre>
+            <a href="/text-processor" class="back-button">Back</a>
+        </main>
+
+    </body>
+</html>

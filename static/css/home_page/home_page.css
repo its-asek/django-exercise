@@ -1,0 +1,50 @@
+.main-container {
+	display: flex;
+}
+
+.half-button.left {
+	background-color: #4FC3F7;
+	color: #FFFFFF;
+}
+
+.half-button.left:hover {
+	background-color: #29B6F6;
+}
+
+.half-button.right {
+	background-color: #2AF27F;
+	color: #FFFFFF;
+}
+
+.half-button.right:hover {
+	background-color: #22C66B;
+}
+
+.half-button {
+	flex: 1;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20rem;
+	transition: all 0.3s;
+	position: relative;
+	text-decoration: none;
+}
+
+.half-button:hover span {
+	opacity: 0;
+}
+
+.half-button:hover::after {
+	content: attr(data-line1) "\A" attr(data-line2);
+	white-space: pre;
+	display: inline-block;
+	position: absolute;
+	font-size: 5rem;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	opacity: 1;
+	transition: opacity 0.3s;
+}

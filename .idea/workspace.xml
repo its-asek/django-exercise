@@ -5,50 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbdffd53-e4a5-4ece-88ee-1414e2f1eb5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DjangoExercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/home_page/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/services/pesel_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/pesel_decoder/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/services/text_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/text_processor/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/home_page/home_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/pesel_decoder/main_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/text_processor/main_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/text_processor/result.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home_page/home_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pesel_decoder/main_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/text_processor/main_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/text_processor/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home_page/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page/home_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pesel_decoder/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pesel_decoder/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/text_processor/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/text_processor/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +48,8 @@
     "Django Server.DjangoExercise.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/AAA MY FILES/Pliki i Zapisy/Programowanie/Zadania rekrutacyjne/Contenelizer/DjangoExercise",
     "node.js.detected.package.eslint": "true",
@@ -149,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761790776596</updated>
-      <workItem from="1761790777711" duration="917000" />
+      <workItem from="1761790777711" duration="1539000" />
     </task>
     <servers />
   </component>
